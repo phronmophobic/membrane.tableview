@@ -1,0 +1,15 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        com.phronemophobic/membrane {:mvn/version "0.13.0-beta"}
+
+        
+        membrane.alpha/stretch {:git/sha "62f1960c1433b60632ec74fd960bc1e208fcb0b4"
+                                :git/url "https://github.com/phronmophobic/membrane.alpha.stretch"}
+        }
+ :aliases
+ {:project
+  {:extra-deps
+   {org.clojure/data.json {:mvn/version "2.4.0"}
+    clj-http/clj-http {:mvn/version "3.12.3"}
+    com.phronemophobic/membrane {:local/root "../membrane2"}
+    com.phronemophobic.membrane/skialib-macosx-aarch64 {:mvn/version "0.13-beta"}}}}}
